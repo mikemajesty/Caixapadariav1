@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{428D28D3-1AA1-4351-BE94-BE78BF0238EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>View</RootNamespace>
+    <AssemblyName>View</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.3.2.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.3.2.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlterarCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterarCaixa.Designer.cs">
+      <DependentUpon>frmAlterarCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlterarEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterarEstoque.Designer.cs">
+      <DependentUpon>frmAlterarEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAtivacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAtivacao.Designer.cs">
+      <DependentUpon>frmAtivacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroDeCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroDeCategoria.Designer.cs">
+      <DependentUpon>frmCadastroDeCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroDeCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroDeCliente.Designer.cs">
+      <DependentUpon>frmCadastroDeCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroDeProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroDeProduto.Designer.cs">
+      <DependentUpon>frmCadastroDeProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroLogin.Designer.cs">
+      <DependentUpon>frmCadastroLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChamaCadastroCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChamaCadastroCategoria.Designer.cs">
+      <DependentUpon>frmChamaCadastroCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChamaCadastroComanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChamaCadastroComanda.Designer.cs">
+      <DependentUpon>frmChamaCadastroComanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChamaCadastroLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChamaCadastroLogin.Designer.cs">
+      <DependentUpon>frmChamaCadastroLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChamaCadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChamaCadastroProduto.Designer.cs">
+      <DependentUpon>frmChamaCadastroProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCodigoDeBarra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCodigoDeBarra.Designer.cs">
+      <DependentUpon>frmCodigoDeBarra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaProdutos.Designer.cs">
+      <DependentUpon>frmConsultaProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDividiPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDividiPagamento.Designer.cs">
+      <DependentUpon>frmDividiPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiado.Designer.cs">
+      <DependentUpon>frmFiado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFluxoDeCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFluxoDeCaixa.Designer.cs">
+      <DependentUpon>frmFluxoDeCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPagamentoFiado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagamentoFiado.Designer.cs">
+      <DependentUpon>frmPagamentoFiado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorio.Designer.cs">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendas.Designer.cs">
+      <DependentUpon>frmVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlterarCaixa.resx">
+      <DependentUpon>frmAlterarCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlterarEstoque.resx">
+      <DependentUpon>frmAlterarEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAtivacao.resx">
+      <DependentUpon>frmAtivacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroDeCategoria.resx">
+      <DependentUpon>frmCadastroDeCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroDeCliente.resx">
+      <DependentUpon>frmCadastroDeCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroDeProduto.resx">
+      <DependentUpon>frmCadastroDeProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroLogin.resx">
+      <DependentUpon>frmCadastroLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChamaCadastroCategoria.resx">
+      <DependentUpon>frmChamaCadastroCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChamaCadastroComanda.resx">
+      <DependentUpon>frmChamaCadastroComanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChamaCadastroLogin.resx">
+      <DependentUpon>frmChamaCadastroLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChamaCadastroProduto.resx">
+      <DependentUpon>frmChamaCadastroProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCodigoDeBarra.resx">
+      <DependentUpon>frmCodigoDeBarra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaProdutos.resx">
+      <DependentUpon>frmConsultaProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDividiPagamento.resx">
+      <DependentUpon>frmDividiPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiado.resx">
+      <DependentUpon>frmFiado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFluxoDeCaixa.resx">
+      <DependentUpon>frmFluxoDeCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagamentoFiado.resx">
+      <DependentUpon>frmPagamentoFiado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorio.resx">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendas.resx">
+      <DependentUpon>frmVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{78d538b5-d753-4c90-9b7d-d0b64703008a}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{d0dfef78-84cf-407a-b248-12e907c17a52}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Source\1417475065_17219.ico" />
+    <Content Include="Source\1417475280_45018.ico" />
+    <Content Include="Source\1417475370_piggy_bank.png" />
+    <Content Include="Source\1417552265_people.png" />
+    <Content Include="Source\1417552464_Login Manager.png" />
+    <Content Include="Source\1417553039_key_login.png" />
+    <Content Include="Source\1417553121_close_delete.png" />
+    <Content Include="Source\1417569615_preferences-desktop-cryptography.png" />
+    <Content Include="Source\1417909102_bar-code.png" />
+    <Content Include="Source\1418154324_Caucasian_boss.png" />
+    <Content Include="Source\add.png" />
+    <Content Include="Source\balanca.ico" />
+    <Content Include="Source\box2.png" />
+    <Content Include="Source\currency_dollar_red.png" />
+    <Content Include="Source\FotoSeForMais.png" />
+    <Content Include="Source\add1.png" />
+    <Content Include="Source\breads.ico" />
+    <Content Include="Source\cancel2.png" />
+    <Content Include="Source\coins.png" />
+    <Content Include="Source\deletered.png" />
+    <Content Include="Source\document_save.png" />
+    <Content Include="Source\foroSeForMenos.png" />
+    <Content Include="Source\edit_remove.png" />
+    <Content Include="Source\gnome_edit_delete.png" />
+    <Content Include="Source\info.png" />
+    <Content Include="Source\maximize_square.png" />
+    <Content Include="Source\minimize_square.png" />
+    <Content Include="Source\money %281%29.png" />
+    <Content Include="Source\money %282%29.png" />
+    <Content Include="Source\not_available.png" />
+    <Content Include="Source\pf.jpg" />
+    <Content Include="Source\planodefundojpg.jpg" />
+    <Content Include="Source\refresh.png" />
+    <Content Include="Source\save.png" />
+    <Content Include="Source\search %281%29.png" />
+    <Content Include="Source\search.png" />
+    <Content Include="Source\shopping_cart.png" />
+    <Content Include="Source\sign_add.png" />
+    <Content Include="Source\sign_remove.png" />
+    <Content Include="Source\stock %281%29.ico" />
+    <Content Include="Source\stock %282%29.ico" />
+    <Content Include="Source\stock.ico" />
+    <Content Include="Source\stock_id.png" />
+    <Content Include="Source\tab_new_raised.png" />
+    <Content Include="Source\Troco.png" />
+    <Content Include="Source\Trocodfd.png" />
+    <Content Include="Source\yes.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
