@@ -297,6 +297,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DataBase\BancoPadaria.sql" />
     <Content Include="Source\1417475065_17219.ico" />
     <Content Include="Source\1417475280_45018.ico" />
     <Content Include="Source\1417475370_piggy_bank.png" />
